@@ -27,7 +27,7 @@ namespace SmartFtpServer
             }
             else
             {
-                FtpCfg cfg = new FtpCfg() { Address = "*", Port = 21 };
+                FtpCfg cfg = new FtpCfg() { Address = "*", Port = 21, UserName="ftpuser",Password="ftpuser" };
                string str= JsonSerializer.Serialize(cfg);
                 using(StreamWriter sw=new StreamWriter(file))
                 {

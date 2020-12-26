@@ -109,6 +109,7 @@ namespace FtpClient
             try
             {
                 ftp.DeleteDirectory(dir);
+                
                 return true;
             }
             catch(Exception ex)
@@ -312,6 +313,28 @@ namespace FtpClient
                 return ftp.UploadFiles(local, dir, FtpRemoteExists.Skip, true, FtpVerify.None, FtpError.None, this.ReturnProgress);
             }
           
+        }
+
+        /// <summary>
+        /// 移动服务器文件（覆盖存在的文件）
+        /// </summary>
+        /// <param name="oldFile">服务器原文件路径</param>
+        /// <param name="file">服务器移动后文件路径</param>
+        /// <returns></returns>
+        public bool MoveFile(string oldFile,string file)
+        {
+           return ftp.MoveFile(oldFile, file);
+        }
+
+        /// <summary>
+        /// 移动服务器文件夹
+        /// </summary>
+        /// <param name="old">服务器原文件夹路径</param>
+        /// <param name="dir">服务器移动后文件夹路径</param>
+        /// <returns></returns>
+        public bool MoveDir(string old, string dir)
+        {
+            return ftp.MoveDirectory(old, dir);
         }
     }
 }
