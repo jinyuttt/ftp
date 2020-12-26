@@ -1,38 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "E:\\study\\SmartFtpServer\\SmartFtpServer\\SmartFtpServer.csproj": {}
+    "E:\\study\\ftps\\ftp\\SmartFtpServer\\SmartFtpServer.csproj": {}
   },
   "projects": {
-    "E:\\study\\SmartFtpServer\\SmartFtpServer\\SmartFtpServer.csproj": {
+    "E:\\study\\ftps\\ftp\\SmartFtpServer\\SmartFtpServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\study\\SmartFtpServer\\SmartFtpServer\\SmartFtpServer.csproj",
+        "projectUniqueName": "E:\\study\\ftps\\ftp\\SmartFtpServer\\SmartFtpServer.csproj",
         "projectName": "SmartFtpServer",
-        "projectPath": "E:\\study\\SmartFtpServer\\SmartFtpServer\\SmartFtpServer.csproj",
-        "packagesPath": "D:\\Temp\\Nuget\\packages",
-        "outputPath": "E:\\study\\SmartFtpServer\\SmartFtpServer\\obj\\",
+        "projectPath": "E:\\study\\ftps\\ftp\\SmartFtpServer\\SmartFtpServer.csproj",
+        "packagesPath": "C:\\Users\\jinyu\\.nuget\\packages\\",
+        "outputPath": "E:\\study\\ftps\\ftp\\SmartFtpServer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "d:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\jinyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 19.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\NuGet.Config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\jinyu\\AppData\\Local\\Esri\\NuGet": {},
-          "D:\\Temp\\Nuget\\packages": {},
-          "d:\\Program Files (x86)\\DevExpress 19.2\\.NET Core Desktop Libraries\\System\\Components\\Packages": {},
-          "d:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "d:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -43,7 +42,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "BouncyCastle": {
               "target": "Package",
@@ -67,19 +67,23 @@
             },
             "Google.Apis.Auth": {
               "target": "Package",
-              "version": "[1.48.0, )"
+              "version": "[1.49.0, )"
             },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
-              "version": "[3.1.6, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.Hosting.Abstractions": {
               "target": "Package",
-              "version": "[3.1.6, )"
+              "version": "[5.0.0, )"
             },
-            "Newtonsoft.Json": {
+            "Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[12.0.3, )"
+              "version": "[5.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.10.0, )"
             }
           },
           "imports": [
@@ -92,22 +96,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.4.20258.7\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

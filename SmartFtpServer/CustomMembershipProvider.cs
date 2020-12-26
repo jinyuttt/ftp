@@ -1,6 +1,3 @@
-// <copyright file="CustomMembershipProvider.cs" company="Fubar Development Junker">
-// Copyright (c) Fubar Development Junker. All rights reserved.
-// </copyright>
 
 using System.Collections.Generic;
 using System.Security.Claims;

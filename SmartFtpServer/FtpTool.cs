@@ -1,13 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
+﻿using System.IO;
 using System.Text.Json;
 
 namespace SmartFtpServer
 {
-   public class FtpTool
+
+    /// <summary>
+    /// ftp工具
+    /// </summary>
+    public class FtpTool
     {
+
+       /// <summary>
+       /// 读取配置
+       /// </summary>
+       /// <param name="file"></param>
+       /// <returns></returns>
         public FtpCfg  ReadCfg(string file="ftpcfg.json")
         {
             if (File.Exists(file))

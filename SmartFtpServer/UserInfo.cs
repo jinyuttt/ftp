@@ -1,13 +1,21 @@
-﻿// <copyright file="CustomMembershipProvider.cs" company="Fubar Development Junker">
-// Copyright (c) Fubar Development Junker. All rights reserved.
-// </copyright>
-
+﻿
 namespace SmartFtpServer
 {
+
+    /// <summary>
+    /// 用户信息
+    /// </summary>
     public class UserInfo
     {
-        public string UserName { get; set; }
+        /// <summary>
+        /// 用户名(默认ftpuser)
+        /// </summary>
+        public string UserName { get; set; } = "ftpuser";
 
-        public string Password { get; set; }
+
+        /// <summary>
+        /// 密码(默认ftpuser)
+        /// </summary>
+        public string Password { get; set; } = "ftpuser";
     }
 }
